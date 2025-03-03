@@ -69,12 +69,6 @@ body {
 }
 
 @media(max-width: 760px){
-    .header {
-        flex-direction: row;
-        align-items: flex-start;
-        align-items: center;
-    }
-
     .header .logo, .header .navbar .register {
         padding: 30px 10px;
     }
