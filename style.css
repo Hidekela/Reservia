@@ -1,5 +1,5 @@
 :root {
-    --padding: 15px;
+    --padding: 40px;
     --blue: rgb(0, 101, 252);
     --silver: rgb(242, 242, 242);
     --lightblue: rgb(222, 235, 255);
@@ -11,7 +11,7 @@
 
 @media (max-width: 760px) {
     :root {
-        --padding: 20px;
+        --padding: 25px;
     }
 
     .mobile_hidden {
@@ -266,4 +266,46 @@ section.search .more i {
     border: 2px solid var(--silver);
     border-radius: 100%;
     margin-right: 10px;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 0 var(--padding);
+    background-color: var(--silver);
+}
+
+footer .item {
+    width: 33%;
+    min-width: 250px;
+    margin: var(--padding) 0;
+}
+
+footer .item h2 {
+    font-size: medium;
+    margin-bottom: 20px;
+}
+
+footer .item ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .item ul li {
+    margin-top: 15px;
+}
+
+footer .item ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+@media (max-width: 760px) {
+    footer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
