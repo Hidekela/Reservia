@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>Reservia</title>
 </head>
@@ -26,31 +27,33 @@
             <p>En plein centre ville ou en pleine nature</p>
         </header>
         <div class="searchbar">
-            <div class="icon"><img src="" alt="position"></div>
-            <div class="input"><input type="text"></div>
-            <div class="button"><a href="#">Rechercher</a></div>
+            <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="input"><input type="text" value="Marseille, France"></div>
+            <div class="button"><a href="#" class="mobile_hidden">Rechercher</a><i class="fas fa-search mobile_inline"></i></div>
         </div>
         <div class="filters">
             <h2>Filtres</h2>
-            <li>
-                <div class="icon"><img src="" alt="economic"></div>
-                <p class="text">Economique</p>
-            </li>
-            <li>
-                <div class="icon"><img src="" alt="familial"></div>
-                <p class="text">Familial</p>
-            </li>
-            <li>
-                <div class="icon"><img src="" alt="romantic"></div>
-                <p class="text">Romantique</p>
-            </li>
-            <li>
-                <div class="icon"><img src="" alt="animals"></div>
-                <p class="text">Animaux autorisés</p>
-            </li>
+            <ul>
+                <li>
+                    <i class="fas fa-money-bill-wave"></i>
+                    <p class="text">Economique</p>
+                </li>
+                <li>
+                    <i class="fas fa-child-reaching"></i>
+                    <p class="text">Familial</p>
+                </li>
+                <li>
+                    <i class="fas fa-heart"></i>
+                    <p class="text">Romantique</p>
+                </li>
+                <li>
+                    <i class="fas fa-dog"></i>
+                    <p class="text">Animaux autorisés</p>
+                </li>
+            </ul>
         </div>
         <div class="more">
-            <div class="icon"><img src="" alt="information"></div>
+            <i class="fas fa-info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </section>
