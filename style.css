@@ -1,5 +1,5 @@
 :root {
-    --padding: 15px;
+    --padding: 40px;
     --blue: rgb(0, 101, 252);
     --silver: rgb(242, 242, 242);
     --lightblue: rgb(222, 235, 255);
@@ -11,7 +11,7 @@
 
 @media (max-width: 760px) {
     :root {
-        --padding: 20px;
+        --padding: 25px;
     }
 
     .mobile_hidden {
