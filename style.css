@@ -1,5 +1,5 @@
 :root {
-    --padding: 40px;
+    --padding: 50px;
     --blue: rgb(0, 101, 252);
     --silver: rgb(242, 242, 242);
     --lightblue: rgb(222, 235, 255);
@@ -266,4 +266,142 @@ section.search .more i {
     border: 2px solid var(--silver);
     border-radius: 100%;
     margin-right: 10px;
+}
+
+section.lodging {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 62% 33%;
+    grid-template-rows: 625px;
+    column-gap: 40px;
+    align-items: flex-start;
+    padding: 0 var(--padding);
+}
+
+section.lodging article {
+    padding: 35px;
+    border-radius: 20px;
+    background-color: var(--silver);
+}
+
+section.lodging article .container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 5px -15px;
+}
+
+section.lodging article .container .card {
+    width: 250px;
+    height: 200px;
+    padding: 5px;
+    margin: 12px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+section.lodging article .container .card .pic {
+    width: 100%;
+    height: 115px;
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+section.lodging article .container .card .pic img {
+    width: 100%;
+    object-fit: contain;
+}
+
+section.lodging article .container .card .desc {
+    padding: 10px;
+}
+
+section.lodging article .container .card .desc > * {
+    padding-bottom: 7px;
+    font-size: small;
+}
+
+section.lodging article .container .card .desc .rating i {
+    color: var(--silver);
+}
+
+section.lodging article .container .card .desc .rating i.blue {
+    color: var(--blue);
+}
+
+section.lodging article .more {
+    flex: 1 100%;
+    font-weight: bold;
+    margin: 20px 0 10px 0;
+}
+
+section.lodging aside {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 40px;
+    padding-bottom: 15px;
+    border-radius: 20px;
+    background-color: var(--silver);
+}
+
+section.lodging aside h1 {
+    flex: 1 90%;
+}
+
+section.lodging aside .seepopular {
+    align-self: flex-end;
+}
+
+section.lodging aside .seepopular i {
+    color: black;
+}
+
+section.lodging aside .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 5px -15px;
+}
+
+section.lodging aside .container .card {
+    display: flex;
+    width: 345px;
+    height: 145px;
+    padding: 5px;
+    margin: 12px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 10px #ccc;
+}
+
+section.lodging aside .container .card .pic {
+    width: 130px;
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+    overflow: hidden;
+}
+
+section.lodging aside .container .card .pic img {
+    height: 100%;
+    object-fit: contain;
+}
+
+section.lodging aside .container .card .desc {
+    padding: 15px;
+}
+
+section.lodging aside .container .card .desc > * {
+    padding-bottom: 10px;
+    font-size: small;
+}
+
+section.lodging aside .container .card .rating i {
+    font-size: small;
+    color: var(--silver);
+}
+
+section.lodging aside .container .card .rating i.blue {
+    color: var(--blue);
 }
