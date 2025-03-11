@@ -666,7 +666,6 @@ footer {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    flex-wrap: wrap;
     padding: 0 var(--padding);
     background-color: var(--silver);
 }
@@ -698,6 +697,7 @@ footer .item ul li a {
 
 @media (max-width: 760px) {
     footer {
+        flex-wrap: wrap;
         padding-top: 20px;
         padding-bottom: 20px;
     }
