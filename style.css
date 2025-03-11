@@ -482,3 +482,65 @@ section.lodging aside .container .card .rating i.blue {
         margin: 5px 15px;
     }
 }
+
+section.activities {
+    width: 100%;
+    padding: var(--padding);
+}
+
+section.activities h1 {
+    width: 100%;
+    padding: 20px 0;
+}
+
+section.activities .container {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 250px 200px;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+section.activities .container .card {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 10px 10px var(--shadow-on-white);
+}
+
+section.activities .container .card:nth-child(3n + 1) {
+    grid-row: 1 / span 2;
+}
+
+section.activities .container .card:nth-child(1) {
+    grid-column: 1;
+}
+
+section.activities .container .card:nth-child(4) {
+    grid-column: 3;
+}
+
+section.activities .container .card .pic {
+    width: 100%;
+    height: calc(100% - 45px);
+    border-radius: 15px 15px 0 0;
+    overflow: hidden;
+}
+
+section.activities .container .card .pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section.activities .container .card .desc {
+    height: 45px;
+    padding: 15px;
+}
+
+section.activities .container .card .desc p {
+    padding-bottom: 7px;
+    font-size: small;
+    font-weight: bold;
+}
