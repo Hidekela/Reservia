@@ -234,6 +234,7 @@ section.search .filters ul li {
     border-radius: 20px;
     border: 2px solid var(--silver);
     border-left: none;
+    cursor: pointer;
 }
 
 section.search .filters ul li i {
@@ -304,7 +305,8 @@ section.lodging article .container .card {
     margin: 15px;
     border-radius: 20px;
     background: white;
-    box-shadow: 0 0 10px var(--shadow-color);;
+    box-shadow: 0 0 10px var(--shadow-color);
+    cursor: pointer;
 }
 
 section.lodging article .container .card .pic {
@@ -341,6 +343,7 @@ section.lodging article .more {
     flex: 1 100%;
     font-weight: bold;
     margin: 27px 0 10px 0;
+    cursor: pointer;
 }
 
 section.lodging aside {
@@ -383,7 +386,8 @@ section.lodging aside .container .card {
     margin: 15px;
     border-radius: 20px;
     background: white;
-    box-shadow: 0 0 10px var(--shadow-color);;
+    box-shadow: 0 0 10px var(--shadow-color);
+    cursor: pointer;
 }
 
 section.lodging aside .container .card .pic {
@@ -509,6 +513,7 @@ section.activities .container .card {
     border-radius: 20px;
     background: white;
     box-shadow: 0 10px 10px var(--shadow-on-white);
+    cursor: pointer;
 }
 
 section.activities .container .card:nth-child(1) {
