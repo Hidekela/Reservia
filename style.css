@@ -3,6 +3,8 @@
     --blue: rgb(0, 101, 252);
     --silver: rgb(242, 242, 242);
     --lightblue: rgb(222, 235, 255);
+    --shadow-color: rgb(230, 230, 230);
+    --shadow-on-white: rgb(240, 240, 240);
 }
 
 .mobile_block, .mobile_inline {
@@ -35,7 +37,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    /* background-color: black; */
+    /* background-color: black;
+    color: #bbb; */
     margin: 0;
 }
 
@@ -207,6 +210,7 @@ section.search .filters {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    margin: 15px 0;
 }
 
 section.search .filters h2 {
@@ -252,7 +256,8 @@ section.search .filters ul li .text {
 section.search .more {
     display: flex;
     align-items: flex-start;
-    margin: 30px auto;
+    margin: 15px auto;
+    margin-bottom: 0;
 }
 
 section.search .more i {
@@ -270,16 +275,17 @@ section.search .more i {
 
 section.lodging {
     width: 100%;
-    display: grid;
-    grid-template-columns: 62% 33%;
-    grid-template-rows: 625px;
-    column-gap: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     align-items: flex-start;
     padding: 0 var(--padding);
 }
 
 section.lodging article {
+    max-width: 880px;
     padding: 35px;
+    margin: 30px 0;
     border-radius: 20px;
     background-color: var(--silver);
 }
@@ -295,10 +301,10 @@ section.lodging article .container .card {
     width: 250px;
     height: 200px;
     padding: 5px;
-    margin: 12px;
+    margin: 15px;
     border-radius: 20px;
     background: white;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px var(--shadow-color);;
 }
 
 section.lodging article .container .card .pic {
@@ -310,7 +316,8 @@ section.lodging article .container .card .pic {
 
 section.lodging article .container .card .pic img {
     width: 100%;
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
 }
 
 section.lodging article .container .card .desc {
@@ -333,13 +340,15 @@ section.lodging article .container .card .desc .rating i.blue {
 section.lodging article .more {
     flex: 1 100%;
     font-weight: bold;
-    margin: 20px 0 10px 0;
+    margin: 27px 0 10px 0;
 }
 
 section.lodging aside {
+    max-width: 420px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 30px 0;
     padding: 40px;
     padding-bottom: 15px;
     border-radius: 20px;
@@ -366,26 +375,29 @@ section.lodging aside .container {
 }
 
 section.lodging aside .container .card {
+    flex: 1;
     display: flex;
-    width: 345px;
+    max-width: 345px;
     height: 145px;
     padding: 5px;
-    margin: 12px;
+    margin: 15px;
     border-radius: 20px;
     background: white;
-    box-shadow: 0 0 10px #ccc;
+    box-shadow: 0 0 10px var(--shadow-color);;
 }
 
 section.lodging aside .container .card .pic {
     width: 130px;
+    min-width: 40%;
     height: 100%;
     border-radius: 15px 0 0 15px;
     overflow: hidden;
 }
 
 section.lodging aside .container .card .pic img {
+    width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 section.lodging aside .container .card .desc {
@@ -404,4 +416,69 @@ section.lodging aside .container .card .rating i {
 
 section.lodging aside .container .card .rating i.blue {
     color: var(--blue);
+}
+
+@media (max-width: 1439px) {
+    section.lodging {
+        flex-direction: column-reverse;
+    }
+
+    section.lodging article {
+        margin: 30px auto;
+    }
+
+    section.lodging article .container{
+        justify-content: space-evenly;
+    }
+
+    section.lodging aside {
+        margin: 30px auto;
+        max-width: 880px;
+    }
+
+    section.lodging aside .container {
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 1020px) and (min-width: 761px) {
+    section.lodging aside .container {
+        flex-direction: column;
+        margin: 5px auto;
+    }
+
+    section.lodging aside .container .card {
+        width: 345px;
+        margin: 15px 0;
+    }
+}
+
+@media (max-width: 760px) {
+    section.lodging {
+        width: 100%;
+    }
+
+    section.lodging article {
+        background-color: unset;
+        margin: 0 calc(0px - var(--padding));
+        padding: var(--padding);
+    }
+
+    section.lodging article .container .card {
+        width: 100%;
+        box-shadow: 0 10px 10px var(--shadow-on-white);
+        margin: 6px 15px;
+    }
+
+    section.lodging aside {
+        border-radius: unset;
+        margin: 30px calc(0px - var(--padding));
+        margin-bottom: 0;
+        padding: var(--padding);
+    }
+
+    section.lodging aside .container .card {
+        box-shadow: 0 10px 10px var(--shadow-color);
+        margin: 5px 15px;
+    }
 }
