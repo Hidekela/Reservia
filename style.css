@@ -486,6 +486,7 @@ section.lodging aside .container .card .rating i.blue {
 section.activities {
     width: 100%;
     padding: var(--padding);
+    padding-top: 0;
 }
 
 section.activities h1 {
@@ -497,7 +498,7 @@ section.activities .container {
     display: grid;
     grid-template-columns: 300px 300px 300px 300px;
     grid-template-rows: 250px 200px;
-    column-gap: 40px;
+    justify-content: space-between;
     row-gap: 40px;
 }
 
@@ -543,4 +544,100 @@ section.activities .container .card .desc p {
     padding-bottom: 7px;
     font-size: small;
     font-weight: bold;
+}
+
+@media (max-width: 1439px) {
+    section.activities .container {
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: 250px 200px 200px;
+        row-gap: 0;
+    }
+
+    section.activities .container .card {
+        margin: 10px 0;
+    }
+
+    section.activities .container .card:nth-child(1) {
+        grid-row: 1 / span 2;
+        grid-column: 1;
+    }
+
+    section.activities .container .card:nth-child(2) {
+        grid-row: 3;
+        grid-column: 1;
+    }
+
+    section.activities .container .card:nth-child(3) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    section.activities .container .card:nth-child(4) {
+        grid-row: 2 / span 3;
+        grid-column: 2;
+    }
+
+    section.activities .container .card:nth-child(5) {
+        grid-row: 1 / span 2;
+        grid-column: 3;
+    }
+
+    section.activities .container .card:nth-child(6) {
+        grid-row: 3;
+        grid-column: 3;
+    }
+}
+
+@media (max-width: 1020px) and (min-width: 761px) {
+    section.activities .container {
+        grid-template-columns: 300px 300px;
+        grid-template-rows: 300px 200px 150px 300px;
+        row-gap: 0;
+    }
+
+    section.activities .container .card {
+        margin: 20px 0;
+    }
+
+    section.activities .container .card:nth-child(1) {
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    section.activities .container .card:nth-child(2) {
+        grid-row: 1;
+        grid-column: 2;
+    }
+
+    section.activities .container .card:nth-child(3) {
+        grid-row: 2;
+        grid-column: 1;
+    }
+
+    section.activities .container .card:nth-child(4) {
+        grid-row: 2 / span 2;
+        grid-column: 2;
+    }
+
+    section.activities .container .card:nth-child(5) {
+        grid-row: 3 / span 4;
+        grid-column: 1;
+    }
+
+    section.activities .container .card:nth-child(6) {
+        grid-row: 4;
+        grid-column: 2;
+    }
+}
+
+@media (max-width: 760px) {
+    section.activities .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.activities .container .card {
+        width: 100%;
+        height: 190px;
+    }
 }
