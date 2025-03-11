@@ -228,7 +228,7 @@ section.search .filters ul {
 
 section.search .filters ul li {
     height: 40px;
-    margin: 7px 15px 7px 0;
+    margin: 7px 10px 7px 0;
     display: flex;
     align-items: center;
     border-radius: 20px;
@@ -480,6 +480,7 @@ section.lodging aside .container .card .rating i.blue {
     section.lodging aside .container .card {
         box-shadow: 0 10px 10px var(--shadow-color);
         margin: 5px 15px;
+        max-width: 100%;
     }
 }
 
