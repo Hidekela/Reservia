@@ -115,18 +115,18 @@ body {
 
 @media(max-width: 760px){
     .header {
-        margin-bottom: 50px;
+        margin-bottom: 65px;
     }
     
     .header .logo, .header .navbar .register {
-        padding: 30px 10px;
+        padding: 24px 10px;
     }
 
     .header .navbar ul {
         position: absolute;
         top: 0;
         left: 0;
-        margin-top: 90px;
+        margin-top: 80px;
         width: 100%;
         background-color: white;
     }
@@ -217,6 +217,7 @@ section.search .searchbar .button a {
     
     section.search .searchbar {
         width: 100%;
+        margin: 33px 0;
     }
 
     section.search .searchbar .input {
@@ -303,13 +304,18 @@ section.search .more i {
     font-size: smaller;
 }
 
-@media (max-width: 760px) {    
+@media (max-width: 760px) {
+    section.search .filters h2 {
+        margin-top: 0;
+    }
+    
     section.search .filters ul li {
         margin: 7px 10px 7px 0;
     }
     
     section.search .more {
         align-items: flex-start;
+        margin-top: 25px;
     }
 }
 
