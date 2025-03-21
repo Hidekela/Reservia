@@ -413,6 +413,18 @@ section.lodging aside .seepopular i {
     color: black;
 }
 
+section.lodging aside .seepopular i::after {
+    content: " ";
+    border-style: solid;
+    border-width: 4px;
+    border-color: transparent transparent black transparent;
+    position: relative;
+    display: inline-block;
+    transform: rotateZ(45deg);
+    margin-left: -4px;
+    margin-bottom: 40%;
+}
+
 section.lodging aside .container {
     display: flex;
     justify-content: space-between;
