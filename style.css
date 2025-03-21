@@ -2,9 +2,20 @@
     --padding: 50px;
     --blue: rgb(0, 101, 252);
     --silver: rgb(242, 242, 242);
+    --gray: rgb(212, 212, 212);
     --lightblue: rgb(222, 235, 255);
     --shadow-color: rgb(230, 230, 230);
     --shadow-on-white: rgb(240, 240, 240);
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url("fonts/Raleway-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Raleway bold';
+    src: url("fonts/Raleway-ExtraBold.ttf");
 }
 
 .mobile_block, .mobile_inline {
@@ -33,10 +44,15 @@
     box-sizing: border-box;
     /* normalize.css */
     margin: 0;
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Raleway bold';
+    font-size: x-large;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
     /* background-color: black;
     color: #bbb; */
     margin: 0;
@@ -94,7 +110,7 @@ body {
 .header .navbar .register a {
     text-decoration: none;
     color: var(--blue);
-    font-weight: bold;
+    font-family: 'Raleway bold';
 }
 
 @media(max-width: 760px){
@@ -123,7 +139,7 @@ body {
 
     .header .navbar ul li.active {
         border-top: none;
-        border-bottom: 2px solid var(--blue);
+        border-bottom: 3px solid var(--blue);
     }
 }
 
@@ -174,7 +190,7 @@ section.search .searchbar .input input {
     padding-right: 45px;
     border: 1px solid var(--silver);
     font-size: medium;
-    font-weight: bold;
+    font-family: 'Raleway bold';
 }
 
 section.search .searchbar .button {
@@ -191,7 +207,7 @@ section.search .searchbar .button {
 section.search .searchbar .button a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-family: 'Raleway bold';
 }
 
 @media (max-width: 760px) {
@@ -215,7 +231,7 @@ section.search .searchbar .button a {
         width: 50px;
         height: 50px;
         border-radius: 15px;
-    }    
+    }
 }
 
 section.search .filters {
@@ -239,19 +255,19 @@ section.search .filters ul {
 }
 
 section.search .filters ul li {
-    height: 40px;
-    margin: 7px 10px 7px 0;
+    height: 50px;
+    margin: 7px 30px 7px 0;
     display: flex;
     align-items: center;
-    border-radius: 20px;
-    border: 2px solid var(--silver);
+    border-radius: 30px;
+    border: 2px solid var(--gray);
     border-left: none;
     cursor: pointer;
 }
 
 section.search .filters ul li i {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,14 +277,14 @@ section.search .filters ul li i {
 }
 
 section.search .filters ul li .text {
-    padding: 0 15px;
+    padding: 0 12px 0 9px;
     margin: 0;
-    font-weight: bold;
+    font-family: 'Raleway bold';
 }
 
 section.search .more {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     margin: 15px auto;
     margin-bottom: 0;
 }
@@ -284,6 +300,17 @@ section.search .more i {
     border: 2px solid var(--silver);
     border-radius: 100%;
     margin-right: 10px;
+    font-size: smaller;
+}
+
+@media (max-width: 760px) {    
+    section.search .filters ul li {
+        margin: 7px 10px 7px 0;
+    }
+    
+    section.search .more {
+        align-items: flex-start;
+    }
 }
 
 section.lodging {
@@ -343,6 +370,10 @@ section.lodging article .container .card .desc > * {
     font-size: small;
 }
 
+section.lodging article .container .card .desc h2 {
+    font-size: medium;
+}
+
 section.lodging article .container .card .desc .rating i {
     color: var(--silver);
 }
@@ -353,7 +384,7 @@ section.lodging article .container .card .desc .rating i.blue {
 
 section.lodging article .more {
     flex: 1 100%;
-    font-weight: bold;
+    font-family: 'Raleway bold';
     margin: 27px 0 10px 0;
     cursor: pointer;
 }
@@ -375,7 +406,7 @@ section.lodging aside h1 {
 }
 
 section.lodging aside .seepopular {
-    align-self: flex-end;
+    align-self: center;
 }
 
 section.lodging aside .seepopular i {
@@ -450,6 +481,10 @@ section.lodging aside .container .card .rating i.blue {
     section.lodging aside {
         margin: 30px auto;
         max-width: 880px;
+    }
+
+    section.lodging aside h1 {
+        margin: 15px 0;
     }
 
     section.lodging aside .container {
@@ -578,8 +613,8 @@ section.activities .container .card .desc {
 
 section.activities .container .card .desc p {
     padding-bottom: 7px;
-    font-size: small;
-    font-weight: bold;
+    font-size: medium;
+    font-family: 'Raleway bold';
 }
 
 @media (max-width: 1439px) {
@@ -717,5 +752,6 @@ footer .item ul li a {
         flex-wrap: wrap;
         padding-top: 20px;
         padding-bottom: 20px;
+        margin-top: 15px;
     }
 }
