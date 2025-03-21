@@ -10,6 +10,7 @@ Outils :
  - HTML
  - CSS
  - fontawesome free 6.7.2 web
+ - Raleway font
 
 Liens :
  - dépôt github : [https://github.com/Hidekela/Reservia](https://github.com/Hidekela/Reservia)
