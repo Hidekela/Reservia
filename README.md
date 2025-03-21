@@ -1,5 +1,7 @@
 # Reservia
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/558c3a5c-87d6-498e-82ed-4c2327c2c87f/deploy-status?branch=prod_netlify)](https://app.netlify.com/sites/reservia-hidekela/deploys)
+
 _Une intégration HTML/CSS de maquette d'un site web de réservation de logement_
 
 ## A propos
